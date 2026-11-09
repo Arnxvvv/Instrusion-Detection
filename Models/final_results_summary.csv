@@ -1,0 +1,5 @@
+Model,Type,Accuracy (Mean ± Std),Overfit Gap (Mean ± Std),Macro F1 (Mean ± Std),Weighted F1 (Mean ± Std),Latency (ms/sample),Throughput (flows/sec),Train Time (s),BENIGN F1,Bot F1,Brute Force F1,DDoS F1,DoS F1,PortScan F1,Web Attack F1
+LightGBM (Balanced),Machine Learning,0.9985 ± 0.0003,+0.0009 ± 0.0003,0.9915 ± 0.0015,0.9985 ± 0.0003,0.0056,"178,943.9",3.97 ± 0.12s,0.9989,0.9655,0.9993,0.9996,0.9987,0.9864,0.9922
+XGBoost (Balanced),Machine Learning,0.9975 ± 0.0001,+0.0007 ± 0.0002,0.9869 ± 0.0004,0.9976 ± 0.0001,0.0019,"515,665.7",5.50 ± 1.75s,0.9982,0.9461,0.9988,0.9994,0.9979,0.9834,0.9849
+Random Forest (Balanced),Machine Learning,0.9919 ± 0.0003,+0.0006 ± 0.0005,0.9586 ± 0.0021,0.9924 ± 0.0002,0.0021,"487,318.8",2.99 ± 0.09s,0.9935,0.7880,0.9963,0.9987,0.9951,0.9800,0.9586
+1D-CNN (PyTorch),Deep Learning,0.9672 ± 0.0060,+0.0002 ± 0.0014,0.9100 ± 0.0074,0.9677 ± 0.0058,0.0099,"101,054.3",70.60 ± 4.29s,0.9728,0.7948,0.9645,0.9926,0.9560,0.8451,0.8440
