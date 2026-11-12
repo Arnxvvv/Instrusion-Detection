@@ -1,0 +1,6 @@
+__pycache__/
+.pytest_cache/
+.venv/
+artifacts/*.pkl
+artifacts/test_data.csv
+artifacts/metadata.json

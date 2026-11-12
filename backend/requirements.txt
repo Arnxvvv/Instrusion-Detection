@@ -1,0 +1,18 @@
+fastapi
+uvicorn[standard]
+python-multipart      # needed for CSV upload
+pydantic>=2
+pandas
+numpy
+scikit-learn
+lightgbm
+joblib
+pyarrow               # only needed for `--parquet` training
+httpx                 # replay script + tests
+scapy                 # live packet capture + pcap reading (live capture also needs Npcap on Windows)
+websockets            # pushes live results to the browser (uvicorn[standard] installs it too)
+pytest
+
+# IMPORTANT if you load .pkl files made in your notebooks: use the SAME versions that trained them.
+# Your notebook 05 recorded: scikit-learn 1.9.0, lightgbm 4.7.0, numpy 2.5.1, pandas 3.0.5.
+# (Pickles from a different scikit-learn/lightgbm version can warn or fail to load.)
